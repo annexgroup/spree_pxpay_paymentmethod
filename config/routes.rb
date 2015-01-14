@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  match '/checkout/pay/callback' => 'spree/checkout#px_pay_callback'
+  match '/checkout/pay/callback' => 'spree/checkout#px_pay_callback', via: [:get, :post]
 end
