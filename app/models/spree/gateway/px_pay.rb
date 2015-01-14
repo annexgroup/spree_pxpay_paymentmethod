@@ -13,9 +13,9 @@ module Spree
 
     preference :user_id, :string
     preference :key, :string
-    preference :currency_input, :string, :default => 'AUD', :description => "3 digit currency code from #{Pxpay::Base.currency_types.join(' ')}"
+    preference :currency_input, :string, :default => 'NZD' #:description => "3 digit currency code from #{Pxpay::Base.currency_types.join(' ')}"
 
-    attr_accessible :preferred_user_id, :preferred_key, :preferred_currency_input
+    #attr_accessible :preferred_user_id, :preferred_key, :preferred_currency_input
 
     def source_required?
       false
